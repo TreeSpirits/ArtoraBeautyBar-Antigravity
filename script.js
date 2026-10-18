@@ -15,11 +15,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const navLinks = document.getElementById('navLinks');
 
+  let isScrolled = false;
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
-      siteHeader.classList.add('scrolled');
-    } else {
-      siteHeader.classList.remove('scrolled');
+    const shouldBeScrolled = window.scrollY > 20;
+    if (shouldBeScrolled !== isScrolled) {
+      isScrolled = shouldBeScrolled;
+      if (isScrolled) {
+        siteHeader.classList.add('scrolled');
+      } else {
+        siteHeader.classList.remove('scrolled');
+      }
     }
   }, { passive: true });
 
@@ -172,6 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
         vid.src = mediaSrc;
         vid.controls = true;
         vid.autoplay = true;
+        vid.muted = true;
+        vid.defaultMuted = true;
         vid.loop = true;
         vid.playsInline = true;
         vid.style.maxHeight = '72vh';
