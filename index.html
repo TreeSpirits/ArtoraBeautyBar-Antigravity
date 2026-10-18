@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artora Beauty Bar | By Ayfer Deniz — Luxury Hair Salon in Tenafly, NJ</title>
+  <meta name="description" content="Artora Beauty Bar is a luxury hair and beauty salon in Tenafly, NJ founded by Master Colorist & Stylist Ayfer Deniz (formerly of Ayfer Salon in Closter). Specializing in bespoke haircuts, dimensional balayage, keratin treatments, Great Lengths hair extensions, and scalp rituals." />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Clean Architectural Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured Data (LocalBusiness / HairSalon) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Artora Beauty Bar",
+    "founder": {
+      "@type": "Person",
+      "name": "Ayfer Deniz",
+      "jobTitle": "Founder & Master Colorist"
+    },
+    "image": "https://artorabeautybar.com/assets/images/logo-square.png",
+    "telephone": "+1-201-768-0383",
+    "email": "admin@artorabeautybar.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8 South Summit Street, Side Entrance, 2nd Floor",
+      "addressLocality": "Tenafly",
+      "addressRegion": "NJ",
+      "postalCode": "07670",
+      "addressCountry": "US"
+    },
+    "url": "https://artorabeautybar.com",
+    "sameAs": [
+      "https://www.instagram.com/artorabeautybar/",
+      "https://www.vagaro.com/artorabeautybar/services"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "10:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:30",
+        "closes": "18:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ====================================================================
+       TOP ANNOUNCEMENT BAR
+       ==================================================================== -->
+  <div class="announcement-bar">
+    <div class="announcement-inner">
+      <div class="announcement-status">
+        <span class="status-dot" id="salonStatusDot"></span>
+        <span id="salonStatusText">8 South Summit St, Side Entrance, 2nd Floor • Tenafly, NJ</span>
+      </div>
+      <div class="announcement-links">
+        <a href="tel:+12017680383">(201) 768-0383</a>
+        <span>•</span>
+        <a href="https://www.instagram.com/artorabeautybar/" target="_blank" rel="noopener">@artorabeautybar</a>
+        <span>•</span>
+        <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener">Book Online via Vagaro &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       STICKY NAVIGATION HEADER
+       ==================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="#top" class="brand-logo" aria-label="Artora Beauty Bar Home">
+        <img src="assets/images/logo-dark.png" alt="Artora Beauty Bar Logo" />
+      </a>
+
+      <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <line x1="3" y1="7" x2="21" y2="7"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="17" x2="21" y2="17"></line>
+        </svg>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#ayfer">Meet Ayfer</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#lookbook">Lookbook</a></li>
+        <li><a href="#press">Press</a></li>
+        <li><a href="#visit">Visit Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://www.instagram.com/artorabeautybar/" target="_blank" rel="noopener" class="nav-icon-link" aria-label="Instagram">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="tel:+12017680383" class="nav-icon-link" aria-label="Call Salon" title="Call (201) 768-0383">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </a>
+        <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+          Book Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       HERO SECTION
+       ==================================================================== -->
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Tenafly, New Jersey • By Ayfer Deniz</span>
+            <h1 class="hero-title">
+              Where Hair Color &amp; Architecture Meet the <em class="editorial-italic">Lost Art of Pampering.</em>
+            </h1>
+            <p class="hero-lead">
+              Founded by master colorist and stylist <strong>Ayfer Deniz</strong>—formerly of the acclaimed Ayfer Salon in Closter—Artora Beauty Bar is an intimate, light-filled sanctuary dedicated to bringing out the very best in you. We study your bone structure, features, natural coloring, and personal vision to craft effortlessly modern, luminous hair.
+            </p>
+            <div class="hero-cta-group">
+              <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="btn btn-primary">
+                Book on Vagaro &rarr;
+              </a>
+              <button type="button" class="btn btn-outline" id="openBookingModalBtn">
+                Quick Service Selector
+              </button>
+              <a href="#lookbook" class="btn btn-outline">
+                View Transformations
+              </a>
+            </div>
+
+            <div class="hero-credentials">
+              <div class="credential-item">
+                <strong>25+ Years</strong>
+                <span>Master Color &amp; Styling</span>
+              </div>
+              <div class="credential-item">
+                <strong>People Mag</strong>
+                <span>Featured Color Authority</span>
+              </div>
+              <div class="credential-item">
+                <strong>Certified</strong>
+                <span>Great Lengths Extensions</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-main-frame">
+              <img src="assets/images/look-dimensional-balayage.jpg" alt="Dimensional blonde balayage and soft waves crafted at Artora Beauty Bar in Tenafly" />
+            </div>
+
+            <!-- Floating Press Badge -->
+            <a href="#press" class="hero-press-pill">
+              <small>Featured In People Magazine</small>
+              <p>&ldquo;Making your mane a main event with brilliant dimension and shine.&rdquo;</p>
+            </a>
+
+            <!-- Floating Live Reel Preview Card -->
+            <div class="hero-video-card">
+              <div class="hero-video-wrap">
+                <video src="assets/videos/reel-dimensional-waves.mp4" poster="assets/images/posters/reel-dimensional-waves.jpg" autoplay muted loop playsinline></video>
+              </div>
+              <div class="hero-video-caption">
+                <span>Artora Motion</span>
+                <span style="color: var(--gold-deep);">● Live</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         EDITORIAL MARQUEE RIBBON
+         ==================================================================== -->
+    <div class="editorial-marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-item">
+          <span>Bespoke Haircuts &amp; Styling</span><span class="marquee-diamond">✦</span>
+          <span>Dimensional Balayage &amp; Highlights</span><span class="marquee-diamond">✦</span>
+          <span>Keratin Smoothing &amp; Blowouts</span><span class="marquee-diamond">✦</span>
+          <span>Certified Great Lengths Extensions</span><span class="marquee-diamond">✦</span>
+          <span>Luxury Scalp &amp; Spa Rituals</span><span class="marquee-diamond">✦</span>
+          <span>By Master Stylist Ayfer Deniz</span><span class="marquee-diamond">✦</span>
+        </div>
+        <div class="marquee-item">
+          <span>Bespoke Haircuts &amp; Styling</span><span class="marquee-diamond">✦</span>
+          <span>Dimensional Balayage &amp; Highlights</span><span class="marquee-diamond">✦</span>
+          <span>Keratin Smoothing &amp; Blowouts</span><span class="marquee-diamond">✦</span>
+          <span>Certified Great Lengths Extensions</span><span class="marquee-diamond">✦</span>
+          <span>Luxury Scalp &amp; Spa Rituals</span><span class="marquee-diamond">✦</span>
+          <span>By Master Stylist Ayfer Deniz</span><span class="marquee-diamond">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         PHILOSOPHY & THREE PILLARS SECTION
+         (Blending Artora's "Look Your Best / Your True Colors / Growing Relationships"
+          with Ayfer Salon's "Fine Art Gallery" philosophy)
+         ==================================================================== -->
+    <section class="philosophy-section" id="philosophy">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="eyebrow">The Artora Philosophy</span>
+          <h2 class="section-title">
+            Presented as a <em class="editorial-italic">Fine Art Gallery</em>, Where Every Client is a Priceless Piece.
+          </h2>
+          <p class="section-subtitle">
+            Smart, modern, artistic, and Zen-happy—Artora Beauty Bar is a needed refuge from the fracas of a frazzled world. Whether you desire a cutting-edge transformation or timeless classic polish, our approach rests on three foundational pillars.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="pillar-card">
+            <div>
+              <div class="pillar-number">01</div>
+              <h3>Look Your Best</h3>
+              <p>
+                We place an uncompromising emphasis on listening to you. Your bone structure, facial features, skin undertone, and lifestyle are thoughtfully harmonized with your personal vision to design a silhouette that looks effortlessly tailored—even weeks after you leave the chair.
+              </p>
+            </div>
+            <div class="pillar-tag">Architectural Cuts &amp; Bespoke Styling</div>
+          </article>
+
+          <article class="pillar-card">
+            <div>
+              <div class="pillar-number">02</div>
+              <h3>Your True Colors</h3>
+              <p>
+                Hair color should never look flat or matte. With warm golds, fiery coppers, rich espressos, and buttery blondes at our fingertips, we specialize in multi-tonal highlights, hand-painted balayage, and ammonia-free glossing that deliver natural-looking color with mirror-like shine.
+              </p>
+            </div>
+            <div class="pillar-tag">Luminous Balayage &amp; Dimensional Color</div>
+          </article>
+
+          <article class="pillar-card">
+            <div>
+              <div class="pillar-number">03</div>
+              <h3>Growing Relationships</h3>
+              <p>
+                Pairing the right artistry with the right client is both a science and a lifelong relationship. Dedicated to the lost art of pampering, we curate world-class botanical and European formulations so your hair and scalp remain vibrant, healthy, and resilient through every season.
+              </p>
+            </div>
+            <div class="pillar-tag">The Lost Art of Pampering</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         MEET AYFER DENIZ — FOUNDER & MASTER STYLIST
+         ==================================================================== -->
+    <section class="founder-section" id="ayfer">
+      <div class="container">
+        <div class="founder-grid">
+          <!-- Interactive Portrait Switcher -->
+          <div class="founder-gallery">
+            <div class="founder-primary-img-wrap">
+              <img id="founderMainImg" src="assets/images/ayfer-portrait.jpg" alt="Ayfer Deniz — Founder and Master Colorist at Artora Beauty Bar" />
+              <div class="founder-caption-badge">
+                <div>
+                  <strong id="founderCaptionTitle">Ayfer Deniz</strong>
+                  <span id="founderCaptionSub">Founder &amp; Master Colorist • Tenafly &amp; Closter</span>
+                </div>
+                <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="btn btn-gold btn-sm">Book with Ayfer</a>
+              </div>
+            </div>
+
+            <div class="founder-thumbs" role="group" aria-label="Ayfer Deniz Portrait Gallery">
+              <button type="button" class="founder-thumb-btn active" data-img="assets/images/ayfer-portrait.jpg" data-title="Ayfer Deniz" data-sub="Founder &amp; Master Colorist • Portrait">
+                <img src="assets/images/ayfer-portrait.jpg" alt="Ayfer Deniz Portrait" />
+              </button>
+              <button type="button" class="founder-thumb-btn" data-img="assets/images/ayfer-tenafly-action.jpg" data-title="Behind the Chair at Artora" data-sub="Styling inside Artora Beauty Bar • Tenafly, NJ">
+                <img src="assets/images/ayfer-tenafly-action.jpg" alt="Ayfer Deniz styling a client at Artora Beauty Bar in Tenafly" />
+              </button>
+              <button type="button" class="founder-thumb-btn" data-img="assets/images/ayfer-closeup.jpg" data-title="Personal Consultation" data-sub="Tailoring color &amp; cut to your bone structure">
+                <img src="assets/images/ayfer-closeup.jpg" alt="Ayfer Deniz Close-Up Portrait" />
+              </button>
+              <button type="button" class="founder-thumb-btn" data-img="assets/images/ayfer-editorial-set.jpg" data-title="Runway &amp; Editorial Mastery" data-sub="On set styling models &amp; editorial shoots">
+                <img src="assets/images/ayfer-editorial-set.jpg" alt="Ayfer Deniz on an editorial photo shoot set" />
+              </button>
+            </div>
+          </div>
+
+          <!-- Founder Bio & Styling Philosophy -->
+          <div class="founder-content">
+            <span class="eyebrow">Founder &amp; Creative Director</span>
+            <h2>Meet <em class="editorial-italic">Ayfer Deniz</em></h2>
+
+            <blockquote class="founder-quote">
+              &ldquo;At Artora, bringing out the very best in you is our mission. Your bone structure, features, and coloring combined with your vision are all factors we consider to create a personalized look made exclusively for you.&rdquo;
+            </blockquote>
+
+            <div class="founder-bio">
+              <p>
+                With more than two decades at the forefront of Bergen County’s luxury hair care scene, <strong>Ayfer Deniz</strong> is celebrated for her intuitive eye, architectural cutting technique, and transformative color work. As the former founder and owner of the beloved <strong>Ayfer Salon</strong> on Closter Dock Road in Closter, NJ, Ayfer built a devoted following among discerning clients seeking Manhattan-caliber artistry in a warm, welcoming sanctuary.
+              </p>
+              <p>
+                An avid student of fashion, fine art, and pop culture, Ayfer has styled hair for numerous models, editorial shoots, and runway shows—earning national recognition in <em>People Magazine</em> for her signature multi-dimensional blondes, warm golds, rich brunettes, and vibrant reds.
+              </p>
+              <p>
+                Today, at <strong>Artora Beauty Bar</strong> on South Summit Street in Tenafly, Ayfer brings her lifelong passion into an airy, second-floor studio designed for unhurried, one-on-one luxury—personally testing and curating every European and botanical formula that touches your hair.
+              </p>
+            </div>
+
+            <div class="founder-highlights">
+              <div class="founder-highlight-item">
+                <h4>Color &amp; Balayage Authority</h4>
+                <p>Renowned for natural, multi-tonal dimension, buttery blondes, and luminous gloss finishes.</p>
+              </div>
+              <div class="founder-highlight-item">
+                <h4>Great Lengths Certified</h4>
+                <p>Certified specialist in 100% natural human hair extensions for seamless volume and length.</p>
+              </div>
+              <div class="founder-highlight-item">
+                <h4>Closter &amp; Tenafly Heritage</h4>
+                <p>Formerly owner of Ayfer Salon in Closter; now welcoming clients to Tenafly’s South Summit St.</p>
+              </div>
+              <div class="founder-highlight-item">
+                <h4>Curated Global Formulations</h4>
+                <p>Hand-selected products from Goldwell, Alfaparf Milano, Davines, L’Oréal &amp; J.F. Lazartigue.</p>
+              </div>
+            </div>
+
+            <div class="hero-cta-group" style="margin-bottom: 0;">
+              <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="btn btn-primary">
+                Schedule with Ayfer on Vagaro &rarr;
+              </a>
+              <a href="tel:+12017680383" class="btn btn-outline">
+                Call (201) 768-0383
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CURATED MENU OF SERVICES
+         ==================================================================== -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="eyebrow">Bespoke Menu of Services</span>
+          <h2 class="section-title">
+            Intelligently Beautiful, <em class="editorial-italic">Thoroughly Modern</em> Hair.
+          </h2>
+          <p class="section-subtitle">
+            Every appointment begins with an attentive consultation studying your features, hair texture, and lifestyle. Select a service category below or proceed directly to our Vagaro booking page for live availability and detailed service options.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="service-tabs" role="tablist" aria-label="Service Categories">
+          <button type="button" class="service-tab-btn active" data-category="all">All Services</button>
+          <button type="button" class="service-tab-btn" data-category="cuts">Cuts &amp; Styling</button>
+          <button type="button" class="service-tab-btn" data-category="color">Color &amp; Balayage</button>
+          <button type="button" class="service-tab-btn" data-category="keratin">Keratin &amp; Smoothing</button>
+          <button type="button" class="service-tab-btn" data-category="extensions">Hair Extensions</button>
+          <button type="button" class="service-tab-btn" data-category="spa">Scalp &amp; Spa</button>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-menu-grid" id="servicesGrid">
+          <!-- 1. Haircuts & Bespoke Styling -->
+          <article class="service-card" data-category="cuts">
+            <div>
+              <div class="service-card-top">
+                <h3>Precision Haircuts &amp; Architecture</h3>
+                <span class="service-category-tag">Cuts &amp; Styling</span>
+              </div>
+              <p>
+                Tailored to your bone structure, facial proportions, and natural hair movement. From textured French bobs and soft face-framing layers to transformative pixies and classic long silhouettes, every cut includes a luxurious cleansing massage and signature blowout.
+              </p>
+              <ul class="service-features">
+                <li>Women’s Bespoke Cut &amp; Blowout</li>
+                <li>Textured Bob &amp; Lob Sculpting</li>
+                <li>Men’s Tailored Cut</li>
+                <li>Complimentary Consultation</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <span>Includes custom product prescription</span>
+              <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="service-book-link">
+                Book on Vagaro &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. Signature Blowouts & Evening Design -->
+          <article class="service-card" data-category="cuts">
+            <div>
+              <div class="service-card-top">
+                <h3>Signature Blowouts &amp; Evening Hair Design</h3>
+                <span class="service-category-tag">Cuts &amp; Styling</span>
+              </div>
+              <p>
+                Whether you desire bouncy, luminous salon waves, a sleek glass-hair blowout, or creative evening and bridal hair design for life’s milestone celebrations, we craft long-lasting volume and effortless movement.
+              </p>
+              <ul class="service-features">
+                <li>Luminous Salon Blowout</li>
+                <li>Red-Carpet Waves &amp; Curls</li>
+                <li>Creative Evening Updos</li>
+                <li>Bridal &amp; Event Styling</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <span>Available for individual &amp; event bookings</span>
+              <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="service-book-link">
+                Book on Vagaro &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- 3. Dimensional Balayage & Highlights -->
+          <article class="service-card" data-category="color">
+            <div>
+              <div class="service-card-top">
+                <h3>Dimensional Balayage &amp; Highlights</h3>
+                <span class="service-category-tag">Color &amp; Balayage</span>
+              </div>
+              <p>
+                Our signature specialty. Using hand-painted balayage, micro-fine babylights, and custom foil placement, Ayfer creates sun-kissed buttery blondes, warm honey ribbons, and rich caramel dimension that grow out seamlessly without harsh lines.
+              </p>
+              <ul class="service-features">
+                <li>Hand-Painted Balayage</li>
+                <li>Full &amp; Partial Foil Highlights</li>
+                <li>Face-Framing Money Piece</li>
+                <li>L’Oréal Ammonia-Free Highlighting</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <span>Formulated for skin tone &amp; season</span>
+              <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="service-book-link">
+                Book on Vagaro &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- 4. Single-Process Color & Illuminating Gloss -->
+          <article class="service-card" data-category="color">
+            <div>
+              <div class="service-card-top">
+                <h3>Single-Process Color &amp; Diamond Gloss</h3>
+                <span class="service-category-tag">Color &amp; Balayage</span>
+              </div>
+              <p>
+                Rich, believable, multi-faceted color from root to ends—or seamless gray coverage—powered by Goldwell and Alfaparf Milano Semi di Lino Diamante illuminating formulations for extraordinary softness and shine.
+              </p>
+              <ul class="service-features">
+                <li>Single-Process Root &amp; All-Over Color</li>
+                <li>Believable Gray Blending &amp; Coverage</li>
+                <li>Illuminating Toner &amp; Gloss Refresh</li>
+                <li>Corrective Color Artistry</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <span>Vibrant, healthy, non-flat finish</span>
+              <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="service-book-link">
+                Book on Vagaro &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- 5. Keratin Treatments & Keratin Blowouts -->
+          <article class="service-card" data-category="keratin">
+            <div>
+              <div class="service-card-top">
+                <h3>Keratin Treatments &amp; Express Blowouts</h3>
+                <span class="service-category-tag">Keratin &amp; Smoothing</span>
+              </div>
+              <p>
+                Transform frizzy, unruly, or humidity-prone hair into silk. Our professional keratin smoothing rituals infuse the cuticle with restorative proteins, dramatically cutting daily styling time while preserving natural body and movement.
+              </p>
+              <ul class="service-features">
+                <li>Full Keratin Smoothing Ritual</li>
+                <li>Express Keratin Blowout</li>
+                <li>Humidity &amp; Frizz Shield</li>
+                <li>Cuticle Sealing &amp; Shine Restoration</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <span>Weeks of effortless, frizz-free manageability</span>
+              <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="service-book-link">
+                Book on Vagaro &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- 6. Certified Great Lengths Hair Extensions -->
+          <article class="service-card" data-category="extensions">
+            <div>
+              <div class="service-card-top">
+                <h3>Great Lengths Hair Extensions</h3>
+                <span class="service-category-tag">Hair Extensions</span>
+              </div>
+              <p>
+                Certified in world-renowned <strong>Great Lengths 100% Natural Human Hair Extensions</strong>. Whether you want dramatic mermaid length, fuller density on fine sides, or chemical-free pops of dimensional color, each strand is custom-matched and invisibly bonded.
+              </p>
+              <ul class="service-features">
+                <li>100% Ethical Human Hair</li>
+                <li>Custom Volume &amp; Length Design</li>
+                <li>Invisible Strand-by-Strand Bonding</li>
+                <li>Complimentary Extension Consultation</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <span>Schedule a complimentary consultation</span>
+              <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="service-book-link">
+                Book on Vagaro &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- 7. Luxurious Scalp & Spa Treatments -->
+          <article class="service-card" data-category="spa">
+            <div>
+              <div class="service-card-top">
+                <h3>Luxurious Scalp &amp; Botanical Hair Spa</h3>
+                <span class="service-category-tag">Scalp &amp; Spa</span>
+              </div>
+              <p>
+                Luminous hair begins at the root. Indulge in our holistic scalp detox, oxygenation, and deep nano-conditioning rituals using J.F. Lazartigue, Davines Nounou, and Pureology Nanoworks to restore elasticity and soothe tension.
+              </p>
+              <ul class="service-features">
+                <li>Purifying Scalp Detox &amp; Massage</li>
+                <li>Deep Restructuring Mask Ritual</li>
+                <li>Color-Preserving Hydration Therapy</li>
+                <li>Post-Chemical Bond Repair</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <span>Ideal standalone or add-on ritual</span>
+              <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="service-book-link">
+                Book on Vagaro &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- 8. Finishing Touches & Beauty Bar Rituals -->
+          <article class="service-card" data-category="spa">
+            <div>
+              <div class="service-card-top">
+                <h3>Beauty Bar Finishing &amp; Skin Rituals</h3>
+                <span class="service-category-tag">Scalp &amp; Spa</span>
+              </div>
+              <p>
+                Complete your transformation with facial framing and restorative beauty treatments—from precision eyebrow shaping and threading to deeply hydrating European skin care rituals curated to leave you glowing from head to toe.
+              </p>
+              <ul class="service-features">
+                <li>Eyebrow Shaping &amp; Threading</li>
+                <li>Rejuvenating Facial &amp; Collagen Care</li>
+                <li>Special Occasion Makeup Inquiry</li>
+                <li>At-Home Regimen Curation</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <span>View full live menu on Vagaro</span>
+              <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="service-book-link">
+                Book on Vagaro &rarr;
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- World-Class Formulations Banner (From Ayfer's Products page) -->
+        <div class="brands-showcase">
+          <h4>Curated Global Formulations</h4>
+          <p>
+            Ayfer personally tests every formula used and offered at Artora Beauty Bar—selected strictly for ingredient purity, performance, texture, and scent. Inquire during your visit to bring your custom salon regimen home.
+          </p>
+          <div class="brand-pills">
+            <span class="brand-pill">Goldwell Professional</span>
+            <span class="brand-pill">Alfaparf Milano • Semi di Lino Diamante</span>
+            <span class="brand-pill">Great Lengths Extensions</span>
+            <span class="brand-pill">Davines Nounou</span>
+            <span class="brand-pill">J.F. Lazartigue Paris</span>
+            <span class="brand-pill">L’Oréal Professionnel Ammonia-Free</span>
+            <span class="brand-pill">Pureology Nanoworks</span>
+            <span class="brand-pill">Babor</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         TRANSFORMATION LOOKBOOK & MOTION REELS
+         ==================================================================== -->
+    <section class="lookbook-section" id="lookbook">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="eyebrow" style="color: var(--gold-light);">The Artora Portfolio</span>
+          <h2 class="section-title">
+            Real Clients. <em class="editorial-italic" style="color: var(--gold-primary);">Brilliant Dimension.</em>
+          </h2>
+          <p class="section-subtitle">
+            Explore recent color transformations, precision cuts, and live salon motion reels captured inside Artora Beauty Bar. Click any video or portrait to view closer.
+          </p>
+        </div>
+
+        <div class="lookbook-filters" role="tablist" aria-label="Portfolio Filters">
+          <button type="button" class="lookbook-filter-btn active" data-filter="all">All Works</button>
+          <button type="button" class="lookbook-filter-btn" data-filter="video">Motion Reels (Video)</button>
+          <button type="button" class="lookbook-filter-btn" data-filter="blonde">Blonde &amp; Balayage</button>
+          <button type="button" class="lookbook-filter-btn" data-filter="brunette">Brunette &amp; Rich Tones</button>
+          <button type="button" class="lookbook-filter-btn" data-filter="cuts">Editorial Cuts</button>
+        </div>
+
+        <div class="lookbook-grid" id="lookbookGrid">
+          <!-- Reel 1: Ayfer Styling in Tenafly -->
+          <div class="lookbook-item" data-type="video" data-tags="video brunette cuts" data-src="assets/videos/reel-ayfer-styling.mp4" data-caption="Ayfer Deniz crafting a glass-shine brunette blowout & fringe at Artora Beauty Bar">
+            <video src="assets/videos/reel-ayfer-styling.mp4" poster="assets/images/posters/reel-ayfer-styling.jpg" autoplay muted loop playsinline></video>
+            <span class="lookbook-badge">Motion Reel</span>
+            <span class="video-sound-indicator" title="Click to expand">▶</span>
+            <div class="lookbook-overlay">
+              <h4>Ayfer Behind the Chair</h4>
+              <p>Silk Blowout &amp; Curtain Fringe</p>
+            </div>
+          </div>
+
+          <!-- Photo 1: Dimensional Balayage -->
+          <div class="lookbook-item" data-type="image" data-tags="blonde" data-src="assets/images/look-dimensional-balayage.jpg" data-caption="Dimensional Ash & Honey Blonde Balayage Waves">
+            <img src="assets/images/look-dimensional-balayage.jpg" alt="Dimensional blonde balayage waves" loading="lazy" />
+            <span class="lookbook-badge">Balayage</span>
+            <div class="lookbook-overlay">
+              <h4>Luminous Honey Balayage</h4>
+              <p>Face-Framing Dimension &amp; Soft Waves</p>
+            </div>
+          </div>
+
+          <!-- Reel 2: Dimensional Waves Motion -->
+          <div class="lookbook-item" data-type="video" data-tags="video blonde" data-src="assets/videos/reel-dimensional-waves.mp4" data-caption="Multi-tonal champagne and caramel ribbons in motion">
+            <video src="assets/videos/reel-dimensional-waves.mp4" poster="assets/images/posters/reel-dimensional-waves.jpg" autoplay muted loop playsinline></video>
+            <span class="lookbook-badge">Motion Reel</span>
+            <span class="video-sound-indicator" title="Click to expand">▶</span>
+            <div class="lookbook-overlay">
+              <h4>Multi-Tonal Ribbons</h4>
+              <p>Seamless Blonde &amp; Caramel Blend</p>
+            </div>
+          </div>
+
+          <!-- Photo 2: Rose-Pearl Pixie -->
+          <div class="lookbook-item" data-type="image" data-tags="cuts blonde" data-src="assets/images/look-rose-pearl-pixie.jpg" data-caption="Sculpted Rose-Pearl Textured Pixie Cut">
+            <img src="assets/images/look-rose-pearl-pixie.jpg" alt="Sculpted rose pearl pixie cut" loading="lazy" />
+            <span class="lookbook-badge">Precision Cut</span>
+            <div class="lookbook-overlay">
+              <h4>Rose-Pearl Textured Pixie</h4>
+              <p>Architectural Crop &amp; Pastel Gloss</p>
+            </div>
+          </div>
+
+          <!-- Photo 3: Sunlit Blonde Layers -->
+          <div class="lookbook-item" data-type="image" data-tags="blonde" data-src="assets/images/look-sunlit-blonde.jpg" data-caption="Buttery Sunlit Blonde with Soft Face-Framing Layers">
+            <img src="assets/images/look-sunlit-blonde.jpg" alt="Buttery sunlit blonde hair transformation" loading="lazy" />
+            <span class="lookbook-badge">Blonde Authority</span>
+            <div class="lookbook-overlay">
+              <h4>Buttery Sunlit Blonde</h4>
+              <p>Custom Foil Highlights &amp; Blowout</p>
+            </div>
+          </div>
+
+          <!-- Reel 3: Glossy Brunette Waves -->
+          <div class="lookbook-item" data-type="video" data-tags="video brunette" data-src="assets/videos/reel-glossy-brunette.mp4" data-caption="Mirror-shine chestnut brunette waves in natural light">
+            <video src="assets/videos/reel-glossy-brunette.mp4" poster="assets/images/posters/reel-glossy-brunette.jpg" autoplay muted loop playsinline></video>
+            <span class="lookbook-badge">Motion Reel</span>
+            <span class="video-sound-indicator" title="Click to expand">▶</span>
+            <div class="lookbook-overlay">
+              <h4>Velvet Chestnut Waves</h4>
+              <p>Diamond Gloss &amp; Sculpted Movement</p>
+            </div>
+          </div>
+
+          <!-- Photo 4: Caramel Brunette -->
+          <div class="lookbook-item" data-type="image" data-tags="brunette" data-src="assets/images/look-caramel-brunette.jpg" data-caption="Warm Espresso & Caramel Dimensional Blowout">
+            <img src="assets/images/look-caramel-brunette.jpg" alt="Warm espresso and caramel hair color" loading="lazy" />
+            <span class="lookbook-badge">Dimensional Brunette</span>
+            <div class="lookbook-overlay">
+              <h4>Espresso &amp; Warm Caramel</h4>
+              <p>Rich Multi-Dimensional Color</p>
+            </div>
+          </div>
+
+          <!-- Photo 5: Champagne Bob -->
+          <div class="lookbook-item" data-type="image" data-tags="blonde cuts" data-src="assets/images/look-champagne-bob.jpg" data-caption="Feathered Champagne Blonde Bob inside Artora Beauty Bar">
+            <img src="assets/images/look-champagne-bob.jpg" alt="Champagne blonde layered bob" loading="lazy" />
+            <span class="lookbook-badge">Cut &amp; Color</span>
+            <div class="lookbook-overlay">
+              <h4>Feathered Champagne Bob</h4>
+              <p>Volume, Movement &amp; Bright Highlights</p>
+            </div>
+          </div>
+
+          <!-- Reel 4: Sun-Kissed Blonde -->
+          <div class="lookbook-item" data-type="video" data-tags="video blonde" data-src="assets/videos/reel-sunkissed-blonde.mp4" data-caption="Sun-kissed dimensional blonde blowout">
+            <video src="assets/videos/reel-sunkissed-blonde.mp4" poster="assets/images/posters/reel-sunkissed-blonde.jpg" autoplay muted loop playsinline></video>
+            <span class="lookbook-badge">Motion Reel</span>
+            <span class="video-sound-indicator" title="Click to expand">▶</span>
+            <div class="lookbook-overlay">
+              <h4>Golden Hour Balayage</h4>
+              <p>Soft Root Melt &amp; Lived-In Blonde</p>
+            </div>
+          </div>
+
+          <!-- Photo 6: Platinum Sleek Lob -->
+          <div class="lookbook-item" data-type="image" data-tags="blonde cuts" data-src="assets/images/look-platinum-lob.jpg" data-caption="Sleek Pearl-Platinum Lob & Wispy Bangs">
+            <img src="assets/images/look-platinum-lob.jpg" alt="Sleek platinum blonde lob haircut" loading="lazy" />
+            <span class="lookbook-badge">Precision Lob</span>
+            <div class="lookbook-overlay">
+              <h4>Pearl-Platinum Sleek Lob</h4>
+              <p>Razor-Sharp Line &amp; Silk Finish</p>
+            </div>
+          </div>
+
+          <!-- Reel 5: Espresso Silk -->
+          <div class="lookbook-item" data-type="video" data-tags="video brunette" data-src="assets/videos/reel-espresso-silk.mp4" data-caption="Luminous copper-kissed espresso blowout">
+            <video src="assets/videos/reel-espresso-silk.mp4" poster="assets/images/posters/reel-espresso-silk.jpg" autoplay muted loop playsinline></video>
+            <span class="lookbook-badge">Motion Reel</span>
+            <span class="video-sound-indicator" title="Click to expand">▶</span>
+            <div class="lookbook-overlay">
+              <h4>Copper-Kissed Espresso</h4>
+              <p>Keratin Silk &amp; Radiant Shine</p>
+            </div>
+          </div>
+
+          <!-- Photo 7: Honey Cascading Blowout -->
+          <div class="lookbook-item" data-type="image" data-tags="blonde" data-src="assets/images/look-honey-blowout.jpg" data-caption="Cascading Honey-Gold Layers & Signature Blowout">
+            <img src="assets/images/look-honey-blowout.jpg" alt="Cascading honey blonde blowout" loading="lazy" />
+            <span class="lookbook-badge">Signature Blowout</span>
+            <div class="lookbook-overlay">
+              <h4>Cascading Honey Gold</h4>
+              <p>Seamless Highlights &amp; Bouncy Ends</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram CTA Banner -->
+        <div class="instagram-cta-bar">
+          <div class="instagram-cta-text">
+            <h3>Follow <em class="editorial-italic" style="color: var(--gold-primary);">@artorabeautybar</em> on Instagram</h3>
+            <p>See daily client transformations, seasonal color inspiration, and behind-the-scenes moments from our Tenafly studio.</p>
+          </div>
+          <a href="https://www.instagram.com/artorabeautybar/" target="_blank" rel="noopener" class="btn btn-gold">
+            Visit @artorabeautybar &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PRESS & EDITORIAL ACCLAIM SECTION (People Magazine Feature)
+         ==================================================================== -->
+    <section class="press-section" id="press">
+      <div class="container">
+        <div class="press-card">
+          <div class="press-content">
+            <span class="eyebrow">Ayfer In The News</span>
+            <h2 class="section-title" style="margin-bottom: 0.5rem;">
+              Featured in <em class="editorial-italic">People Magazine</em>
+            </h2>
+            <p style="font-size: 0.84rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted);">
+              The People’s Choice Awards Special Feature
+            </p>
+
+            <blockquote class="press-quote-text">
+              &ldquo;Salon owner Ayfer Deniz believes in the transformative power of updating one’s hair color, making life more colorful. With warm golds, hot reds, rich browns, and buttery blonds at her fingertips, Ayfer has styled hair for numerous models and runway shows. Haircolor no longer has to look flat and matte, you can get natural looking color with brilliant dimension and shine. So whether you’re going for a slight change or a dramatic new look, follow Ayfer’s advice for making your mane a main event.&rdquo;
+            </blockquote>
+
+            <div class="press-attribution">
+              <img src="assets/images/press-ayfer-badge.jpg" alt="Ayfer Deniz in People Magazine" />
+              <div>
+                <strong>Ayfer Deniz — Master Colorist</strong>
+                <span>Featured Color Expert • People Magazine Editorial Spotlight</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="press-magazine-preview">
+            <img src="assets/images/press-people-magazine.jpg" alt="People Magazine feature with Ayfer Deniz for The People's Choice Awards" />
+            <small>Archival Print Feature • People Magazine</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VISIT US, HOURS & SALON CONSIDERATIONS
+         ==================================================================== -->
+    <section class="visit-section" id="visit">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="eyebrow">Sanctuary in Tenafly</span>
+          <h2 class="section-title">
+            Visit <em class="editorial-italic">Artora Beauty Bar</em>
+          </h2>
+          <p class="section-subtitle">
+            Conveniently located in the heart of Tenafly, New Jersey. Step through our private side entrance up to the second floor for an intimate, unhurried salon experience.
+          </p>
+        </div>
+
+        <div class="visit-grid">
+          <!-- Left Column: Location, Hours & Direct Contact -->
+          <div class="visit-info-card">
+            <div class="visit-detail-block">
+              <h3>Location &amp; Arrival</h3>
+              <p class="address-large">8 South Summit Street</p>
+              <p style="color: var(--text-secondary); font-size: 1.02rem;">Tenafly, New Jersey 07670</p>
+              <span class="entrance-note">✦ Side Entrance • 2nd Floor</span>
+              <div style="margin-top: 1.1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <a href="https://maps.google.com/?q=8+South+Summit+Street,+Tenafly,+NJ+07670" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                  Get Directions &rarr;
+                </a>
+                <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                  Book Appointment
+                </a>
+              </div>
+            </div>
+
+            <div class="visit-detail-block">
+              <h3>Hours of Operation</h3>
+              <ul class="hours-list" id="hoursList">
+                <li data-day="1"><span>Monday</span><span>Closed</span></li>
+                <li data-day="2"><span>Tuesday</span><span>10:00 AM – 6:00 PM</span></li>
+                <li data-day="3"><span>Wednesday</span><span>10:00 AM – 6:00 PM</span></li>
+                <li data-day="4"><span>Thursday</span><span>10:00 AM – 6:00 PM</span></li>
+                <li data-day="5"><span>Friday</span><span>10:00 AM – 6:00 PM</span></li>
+                <li data-day="6"><span>Saturday</span><span>9:30 AM – 6:00 PM</span></li>
+                <li data-day="0"><span>Sunday</span><span>Closed</span></li>
+              </ul>
+            </div>
+
+            <div class="visit-detail-block">
+              <h3>Direct Contact</h3>
+              <div class="contact-links-grid">
+                <a href="tel:+12017680383" class="contact-box">
+                  <small>Telephone</small>
+                  <strong>(201) 768-0383</strong>
+                </a>
+                <a href="mailto:admin@artorabeautybar.com" class="contact-box">
+                  <small>Email Concierge</small>
+                  <strong>admin@artorabeautybar.com</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Map & Salon Considerations -->
+          <div class="map-and-policies">
+            <div class="map-frame-wrap">
+              <iframe
+                title="Artora Beauty Bar Map — 8 South Summit Street, Tenafly, NJ"
+                src="https://www.google.com/maps?q=8+South+Summit+Street,+Tenafly,+NJ+07670&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <div class="considerations-card">
+              <span class="eyebrow" style="margin-bottom: 0.4rem;">Client Care &amp; Policies</span>
+              <h3>Salon Considerations</h3>
+              <ul class="considerations-list">
+                <li>
+                  <strong>Our Satisfaction Guarantee:</strong> Bringing out the best in you is our mission. We guarantee that all services are provided to your complete satisfaction using hand-selected professional products from around the world.
+                </li>
+                <li>
+                  <strong>24-Hour Notice Courtesy:</strong> Should you need to reschedule or cancel an appointment, please let us know at least 24 hours in advance. To ensure your preferred time, we recommend booking your next visit before leaving the salon.
+                </li>
+                <li>
+                  <strong>Collaborative Artistry:</strong> Our stylists function as a cohesive creative team whose primary concern is your happiness and confidence.
+                </li>
+                <li>
+                  <strong>Gift Cards Available:</strong> Artora Beauty Bar gift cards are redeemable for both treatments and retail products year-round in any denomination.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         FULL-WIDTH BOOKING CALL TO ACTION
+         ==================================================================== -->
+    <section class="booking-cta-banner">
+      <div class="container">
+        <span class="eyebrow" style="color: var(--gold-primary);">Reserve Your Chair</span>
+        <h2>Ready to Make Your Mane a <em class="editorial-italic" style="color: var(--gold-light);">Main Event?</em></h2>
+        <p>
+          View our complete service menu, select your preferred treatments, and schedule your appointment online via our official Vagaro booking portal—or call us directly at (201) 768-0383.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="btn btn-gold">
+            Book Now on Vagaro &rarr;
+          </a>
+          <button type="button" class="btn btn-outline" id="openBookingModalFooterBtn" style="color: var(--text-light); border-color: rgba(250,248,245,0.4);">
+            Open On-Site Booking Hub
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo-light.png" alt="Artora Beauty Bar" />
+          <p>
+            An airy, modern hair and beauty sanctuary in Tenafly, New Jersey. Founded by master colorist and stylist Ayfer Deniz, dedicated to bespoke color, precision cuts, and the lost art of pampering.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#philosophy">Our Philosophy</a></li>
+            <li><a href="#ayfer">Meet Ayfer Deniz</a></li>
+            <li><a href="#services">Menu of Services</a></li>
+            <li><a href="#lookbook">Lookbook &amp; Reels</a></li>
+            <li><a href="#press">People Magazine Feature</a></li>
+            <li><a href="#visit">Hours &amp; Location</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Signature Services</h4>
+          <ul>
+            <li><a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener">Precision Cuts &amp; Styling</a></li>
+            <li><a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener">Balayage &amp; Highlights</a></li>
+            <li><a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener">Single-Process Color &amp; Gloss</a></li>
+            <li><a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener">Keratin Smoothing &amp; Blowouts</a></li>
+            <li><a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener">Great Lengths Extensions</a></li>
+            <li><a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener">Scalp &amp; Spa Treatments</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visit Tenafly</h4>
+          <ul>
+            <li>8 South Summit Street</li>
+            <li>Side Entrance, 2nd Floor</li>
+            <li>Tenafly, NJ 07670</li>
+            <li style="margin-top: 0.4rem;"><a href="tel:+12017680383">(201) 768-0383</a></li>
+            <li><a href="mailto:admin@artorabeautybar.com">admin@artorabeautybar.com</a></li>
+            <li><a href="https://www.instagram.com/artorabeautybar/" target="_blank" rel="noopener">Instagram: @artorabeautybar</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="currentYear">2026</span> Artora Beauty Bar. All rights reserved.</span>
+        <span>Founded by Ayfer Deniz • Formerly Ayfer Salon of Closter, NJ</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       FLOATING QUICK-BOOK PILL
+       ==================================================================== -->
+  <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="floating-book-cta" aria-label="Book Appointment on Vagaro">
+    <span>✦ Book Appointment</span>
+  </a>
+
+  <!-- ====================================================================
+       ON-SITE VAGARO BOOKING HUB / WIDGET MODAL
+       ==================================================================== -->
+  <div class="modal-backdrop" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="bookingModalTitle">Schedule at Artora Beauty Bar</h3>
+        <button type="button" class="modal-close" id="closeBookingModalBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--text-secondary); font-size: 0.96rem;">
+          Select a service category below to launch our official <strong>Vagaro</strong> scheduler in a secure window, or call us directly at <a href="tel:+12017680383" style="text-decoration: underline; font-weight: 600;">(201) 768-0383</a> for personal assistance with multi-service or extension consultations.
+        </p>
+
+        <div class="vagaro-quick-grid">
+          <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="vagaro-service-link">
+            <span>Haircuts &amp; Signature Styling</span>
+            <span style="color: var(--gold-deep);">&rarr;</span>
+          </a>
+          <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="vagaro-service-link">
+            <span>Single-Process, Highlights &amp; Balayage</span>
+            <span style="color: var(--gold-deep);">&rarr;</span>
+          </a>
+          <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="vagaro-service-link">
+            <span>Keratin Treatments &amp; Blowouts</span>
+            <span style="color: var(--gold-deep);">&rarr;</span>
+          </a>
+          <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="vagaro-service-link">
+            <span>Great Lengths Hair Extensions</span>
+            <span style="color: var(--gold-deep);">&rarr;</span>
+          </a>
+          <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="vagaro-service-link">
+            <span>Scalp &amp; Spa Treatments</span>
+            <span style="color: var(--gold-deep);">&rarr;</span>
+          </a>
+          <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="vagaro-service-link">
+            <span>View Full Vagaro Menu &amp; Prices</span>
+            <span style="color: var(--gold-deep);">&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Ready-to-Use Vagaro Embedded Widget Container -->
+        <div id="vagaro-widget-container" class="vagaro-embed-note">
+          <strong>Direct Vagaro Portal &amp; Widget Ready:</strong>
+          <div style="margin-top: 0.45rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
+            <span>Prefer to book directly on Vagaro’s full page? Click the button to open <code>vagaro.com/artorabeautybar/services</code>.</span>
+            <a href="https://www.vagaro.com/artorabeautybar/services" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+              Launch Vagaro Scheduler &rarr;
+            </a>
+          </div>
+          <!--
+            TO EMBED VAGARO INLINE WIDGET LATER:
+            1. In Vagaro, go to Settings > Booking Widget
+            2. Copy your custom <div class="vagaro">...<script src="..."></script></div> snippet
+            3. Paste it directly inside this #vagaro-widget-container div!
+          -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       PORTFOLIO LIGHTBOX MODAL (Photos & Full Motion Reels)
+       ==================================================================== -->
+  <div class="modal-backdrop" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Lookbook Preview">
+    <div class="modal-content" style="max-width: 620px; background: var(--bg-dark); color: var(--text-light);">
+      <div class="modal-header" style="border-bottom: 1px solid rgba(197,168,128,0.2);">
+        <h3 id="lightboxCaption" style="font-size: 1.2rem;">Artora Lookbook</h3>
+        <button type="button" class="modal-close" id="closeLightboxBtn" aria-label="Close preview">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 1rem; display: flex; justify-content: center; align-items: center; background: #0d0c0b;">
+        <div id="lightboxMediaWrap" style="width: 100%; max-height: 75vh; display: flex; justify-content: center;"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
